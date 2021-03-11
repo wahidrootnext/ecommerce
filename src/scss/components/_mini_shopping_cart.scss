@@ -1,0 +1,9 @@
+.cart-list {
+	.card {
+		&-remove {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.footer {
+	&_top {
+		.footer_widget {
+			&__title {
+				color: $dark;
+			}
+			&__content {
+				.navigation {
+					list-style: none;
+					li {
+						& + li {
+							margin-top: .5rem;
+						}
+					}
+					a {
+						color: rgba($dark, .6);
+						display: inline-block;
+						&:hover {
+							color: $dark;
+						}
+					}
+				}
+			}
+		}
+	}
+	&_bottom {
+		.copyright {
+			color: rgba($dark, .6);
+		}
+	}
+}

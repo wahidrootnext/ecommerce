@@ -1,0 +1,57 @@
+$body-bg: #EEEEEE;
+$body-color: #666666;
+
+$enable-rounded: false;
+$enable-shadows: true;
+$zindex-dropdown: 1080;
+
+$font-size-base: 0.875rem;
+$font-family-base: 'Roboto', sans-serif;
+$font-weight-lighter: 100;
+$font-weight-bolder: 900;
+$headings-font-family: 'Roboto Condensed', sans-serif;
+$headings-font-weight: 400;
+
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+
+$btn-font-size: $font-size-base;
+$input-font-size: $font-size-base;
+$nav-link-color: inherit;
+
+$navbar-padding-y: 0;
+$navbar-toggler-focus-width: 0;
+$navbar-light-color: black;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+$navbar-light-toggler-icon-bg: none;
+$navbar-light-toggler-border-color: transparent;
+$navbar-light-brand-color: black;
+$navbar-light-brand-hover-color: black;
+$navbar-brand-padding-y: 1rem;
+$navbar-nav-link-padding-x: 1rem;
+
+
+
+$theme-colors: (
+	"primary":    $primary,
+	"secondary":  $secondary,
+	"success":    $success,
+	"info":       $info,
+	"warning":    $warning,
+	"danger":     $danger,
+	"light":      $light,
+	"dark":       $dark,
+	"white":      $white
+);
+
+
+$dropdown-link-active-color: $gray-800;
+$dropdown-link-active-bg: $gray-400;
+$dropdown-item-padding-y: .5rem;
+$dropdown-font-size: 0.875rem;
+$dropdown-min-width: 12rem;
+$dropdown-border-width: 0;
+$dropdown-padding-y: 0;
+$dropdown-spacer: 1px;

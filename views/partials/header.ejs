@@ -9,3 +9,126 @@
         <link rel="stylesheet" href="/css/styles.bundle.css">
     </head>
     <body>
+        <nav class="shadow-sm navbar sticky-top navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a href="#" class="navbar-brand fw-bolder">eCommerce</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" onclick="this.classList.toggle('opened')" >
+                    <svg width="24" height="24" viewBox="0 0 100 100"><path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" /><path class="line line2" d="M 20,50 H 80" /><path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" /></svg>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Checkout</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">My Account</a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <h6 class="dropdown-header pt-3 pb-0">Welcome to eCommerce</h6>
+                                </li>
+                                <li class="px-3 py-2">
+                                    <div class="row gx-1">
+                                        <div class="col">
+                                            <a href="#" class="btn btn-primary w-100">Join</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="btn btn-secondary w-100">Sign In</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a class="dropdown-item" href="#">My Orders</a></li>
+                                <li><a class="dropdown-item" href="#">Message Center</a></li>
+                                <li><a class="dropdown-item" href="#">My Favourite Stores</a></li>
+                                <li><a class="dropdown-item" href="#">My Coupons</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#" title="Wishlist"><i class="lnr lnr-heart"></i><span class="ms-2 d-lg-none">Wishlist</span></a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle no-icon" data-bs-toggle="dropdown" href="#" title="Search"><i class="lnr lnr-magnifier"></i><span class="ms-2 d-lg-none">Search</span></a>
+                            <div class="dropdown-menu dropdown-menu-end" style="min-width: 16rem;">
+                                <form class="p-3">
+                                    <div class="input-group-over">
+                                        <input type="text" class="form-control" placeholder="Enter keywords..." style="padding-right: 40px;" required>
+                                        <button type="submit" class="btn"><i class="lnr lnr-magnifier"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle no-icon" data-bs-toggle="dropdown" data-bs-disable-inside="true" href="#" title="Cart"><i class="lnr lnr-cart"></i><span class="ms-2 d-lg-none">Cart</span></a>
+                            <div class="dropdown-menu dropdown-menu-end" style="min-width: 16rem;">
+                                <div class="p-3">
+                                    <div class="cart-list">
+                                        <div class="card border-start-0 border-end-0 border-top-0 pb-2 mb-2">
+                                            <div class="row g-0">
+                                                <div class="col-auto">
+                                                    <a href="#"><img src="http://placehold.it/50x50" alt="..."></a>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card-body px-2 py-1">
+                                                        <h6 class="card-title mb-1"><a href="#">Lorem ipsum dolor</a></h6>
+                                                        <p class="card-text"><small class="text-secondary fw-bold me-3">$250</small><small class="text-muted">Qty: <strong>2</strong></small></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto align-self-center">
+                                                    <a href="#" class="text-danger card-remove"><i class="lnr lnr-cross-circle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-start-0 border-end-0 border-top-0 pb-2 mb-2">
+                                            <div class="row g-0">
+                                                <div class="col-auto">
+                                                    <a href="#"><img src="http://placehold.it/50x50" alt="..."></a>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card-body px-2 py-1">
+                                                        <h6 class="card-title mb-1"><a href="#">Lorem ipsum dolor</a></h6>
+                                                        <p class="card-text"><small class="text-secondary fw-bold me-3">$250</small><small class="text-muted">Qty: <strong>2</strong></small></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto align-self-center">
+                                                    <a href="#" class="text-danger card-remove"><i class="lnr lnr-cross-circle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-start-0 border-end-0 border-top-0 pb-2 mb-2">
+                                            <div class="row g-0">
+                                                <div class="col-auto">
+                                                    <a href="#"><img src="http://placehold.it/50x50" alt="..."></a>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card-body px-2 py-1">
+                                                        <h6 class="card-title mb-1"><a href="#">Lorem ipsum dolor</a></h6>
+                                                        <p class="card-text"><small class="text-secondary fw-bold me-3">$250</small><small class="text-muted">Qty: <strong>2</strong></small></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto align-self-center">
+                                                    <a href="#" class="text-danger card-remove"><i class="lnr lnr-cross-circle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row fw-bold pt-1">
+                                        <div class="col">
+                                            <p class="m-0">Total:</p>
+                                        </div>
+                                        <div class="col">
+                                            <p class="m-0 text-end">$1500</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="row g-2">
+                                        <div class="col">
+                                            <a href="#" class="btn btn-secondary w-100">View Cart</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="btn btn-primary w-100">Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>

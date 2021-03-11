@@ -1,0 +1,17 @@
+.dropdown {
+	&-toggle {
+		&.no-icon {
+			&::after {
+				display: none;
+			}
+		}
+		&::after {
+			content: "\e874";
+			font-family: 'Linearicons-Free';
+			border: none;
+			font-size: .5rem;
+			margin-left: .5rem;
+			font-weight: bold;
+		}
+	}
+}
