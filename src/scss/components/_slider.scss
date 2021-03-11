@@ -1,9 +1,7 @@
 .swiper {
 	&-slider {
 		.slider-pagination {
-			-webkit-transform: translateY(-50px);
-			-moz-transform: translateY(-50px);
-			transform: translateY(-50px);
+			@include transform(translateY(-50px));
 			position: relative;
 			z-index: 1;
 		}
@@ -11,9 +9,7 @@
 
 	&-pagination {
 		left: 50%;
-		-webkit-transform: translateX(-50%);
-		-moz-transform: translateX(-50%);
-		transform: translateX(-50%);
+		@include transform(translateX(-50%));
 		&-bullet {
 			& + & {
 				margin-left: .5rem;
@@ -38,11 +34,7 @@
 			font-size: 3rem;
 		}
 		.btn {
-			font-size: 1.125rem;
-			i {
-				font-size: .75rem;
-				margin-left: .5rem;
-			}
+			font-size: 1rem;
 		}
 		&-inner {
 			background-color: rgba(0, 0, 0, .35);

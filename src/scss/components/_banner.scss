@@ -9,7 +9,7 @@ $banner-border: 2px solid rgba(255, 255, 255, .25);
 	overflow: hidden;
 	&_thumb {
 		@include backface-visibility(hidden);
-		@include transition();
+		@include transition(all .5s ease-out);
 	}
 	&_overlay {
 		background-color: $banner-overlay;
@@ -23,8 +23,8 @@ $banner-border: 2px solid rgba(255, 255, 255, .25);
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		width: 60%;
-		height: 60%;
+		width: fit-content;
+		max-width: 80%;
 		border: $banner-border;
 		padding: 1rem;
 		text-align: center;
