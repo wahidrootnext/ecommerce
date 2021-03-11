@@ -1,6 +1,7 @@
 import 'jquery';
 import '@popperjs/core';
 import 'bootstrap';
+import Swiper from 'swiper/swiper-bundle.min';
 
 
 //Disable dropdown hide during inside click
@@ -15,5 +16,25 @@ $(document).click(function (event) {
 		isNavbarOpen = $(".navbar-collapse").hasClass("show");
 	if (isNavbarOpen === true && !clickedElement.hasClass("navbar-toggler")) {
 		$(".navbar-toggler").click();
+	}
+});
+
+
+
+//Banner slider
+new Swiper('.banner-slider', {
+	loop: true,
+	autoplay: {
+		delay: 3500,
+	},
+	allowTouchMove: false,
+	effect: 'fade',
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	}
 });
