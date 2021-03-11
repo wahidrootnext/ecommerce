@@ -1,0 +1,13 @@
+@mixin transform($param) {
+	-o-transform: $param;
+	-ms-transform: $param;
+	-webkit-transform: $param;
+	-moz-transform: $param;
+	transform: $param;
+}
+
+@mixin backface-visibility($param) {
+	-webkit-backface-visibility: $param;
+	-moz-backface-visibility: $param;
+	backface-visibility: $param;
+}

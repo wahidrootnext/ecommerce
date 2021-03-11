@@ -5,6 +5,8 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
+
+@import "components/mixins";
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
 
@@ -15,6 +17,8 @@
 
 @import "~swiper/swiper-bundle.min.css";
 @import "components/slider";
+
+@import "components/banner";
 
 @import "components/footer";
 @import "custom";
