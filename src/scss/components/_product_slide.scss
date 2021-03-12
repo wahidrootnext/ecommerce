@@ -1,0 +1,70 @@
+.product_slide {
+	background-color: white;
+	&:hover {
+		.product {
+			&_actions {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	.product {
+		&_thumb {
+			position: relative;
+			& > a {
+				display: block;
+				padding: 1rem;
+				text-align: center;
+			}
+			.badge {
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 1;
+				padding: .35rem .7rem;
+			}
+		}
+		&_content{
+			padding: 0 1rem 1rem;
+		}
+		&_actions{
+			opacity: 0;
+			visibility: hidden;
+			@include transition();
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			position: absolute;
+			bottom: 1.5rem;
+			right: 1.5rem;
+			li {
+				& + li {
+					margin-top: .5rem;
+				}
+				a {
+					&:hover {
+						text-decoration: none;
+					}
+					display: block;
+					width: 2.5rem;
+					height: 2.5rem;
+					color: white;
+					background-color: $dark;
+					-webkit-border-radius: 50px;
+					-moz-border-radius: 50px;
+					border-radius: 50px;
+					text-align: center;
+					line-height: 2.5rem;
+					i {
+						font-size: 1.125rem;
+						line-height: inherit;
+					}
+				}
+			}
+		}
+		&_title{}
+		&_price{}
+		&_rating{}
+		&_btn_group{}	
+	}
+}
