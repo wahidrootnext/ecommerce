@@ -45,7 +45,7 @@ new Swiper('.product-slider', {
 	slidesPerView: 1,
 	loop: true,
 	autoplay: {
-		delay: 3000,
+		delay: 4000,
 	},
 	breakpoints: {
 		576: {
