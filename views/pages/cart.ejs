@@ -1,0 +1,55 @@
+<%- include('../partials/header'); %>
+    <%- include('../partials/breadcrumb'); %>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="p-4 bg-white">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#" class="text-danger"><i class="fas fa-times-circle"></i></a>
+                                    <a href="#"><img src="http://placehold.it/40x40" alt="Product"></a>
+                                    <a href="#" class="link-dark">Product title</a>
+                                </td>
+                                <td>$250.00</td>
+                                <td><input type="number" min="0" class="form-control" value="1" style="width: 100px"></td>
+                                <td>$250.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="row gx-2 align-items-center">
+                                        <div class="col-auto">
+                                            <input type="text" class="form-control" placeholder="Coupon code">
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="btn btn-dark">Apply Coupon</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td colspan="2" class="text-end">
+                                    <button class="btn btn-dark">Update Cart</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<%- include('../partials/modal_product'); %>
+<%- include('../partials/footer'); %>
