@@ -1,0 +1,71 @@
+<div class="modal fade" id="product-quick-view-modal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a href="#" data-bs-dismiss="modal" class="modal-close-btn"><i class="fas fa-times"></i></a>
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="product_qv_thumbnails">
+                            <div id="product_qv_slider" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#product_qv_slider" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#product_qv_slider" data-bs-slide-to="1"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active text-center">
+                                        <img src="http://wahid.rootnext.xyz/images/ecommerce/product_thumb_front.jpeg" alt="Product Thumbnail" class="img-fluid">
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <img src="http://wahid.rootnext.xyz/images/ecommerce/product_thumb_back.jpeg" alt="Product Thumbnail" class="img-fluid">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#product_qv_slider" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#product_qv_slider" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="product_qv_content">
+                            <h4 class="mb-2 text-dark">Product Title</h4>
+                            <p class="product_price mb-2"><span class="text-decoration-line-through text-muted">$100</span> $75</p>
+                            <div class="product_qv_rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                            </div>
+                            <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <form class="mb-3">
+                                <div class="row mb-3">
+                                    <div class="col-auto">
+                                        <select class="form-select">
+                                            <option selected>Choose a size</option>
+                                            <option value="1">S</option>
+                                            <option value="2">L</option>
+                                            <option value="3">XL</option>
+                                            <option value="3">XXL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row g-2 align-items-center">
+                                    <div class="col-auto">
+                                        <input type="number" class="form-control" min="0" max="9999" value="1" required>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="btn btn-dark px-4">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p class="m-0">Categories: <a href="#" class="link-dark text-decoration-underline">Man</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

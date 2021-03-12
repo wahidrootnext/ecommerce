@@ -1,0 +1,219 @@
+<%- include('../partials/header'); %>
+    <%- include('../partials/breadcrumb'); %>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-xl-3">
+                <%- include('../partials/sidebar'); %>
+            </div>
+            <div class="col-md-8 col-lg-8 col-xl-9">
+                <div class="shop_content">
+                    <div class="bg-white mb-3 p-3">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="btn-group btn-group-sm">
+                                    <input type="radio" class="btn-check" name="product_view" id="view_column" autocomplete="off" checked>
+                                    <label class="btn btn-outline-dark" for="view_column"><i class="fas fa-th-large"></i></label>
+                                    <input type="radio" class="btn-check" name="product_view" id="view_row" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="view_row"><i class="fas fa-grip-horizontal"></i></label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row justify-content-end">
+                                    <div class="col-auto">
+                                        <label for="sortby" class="col-form-label">Sort By</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <select class="form-select" id="sortby">
+                                            <option>Best Match</option>
+                                            <option>Price Low to High</option>
+                                            <option>Price High to Low</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 gy-4">
+                        <div class="col">
+                            <div class="product_slide">
+                                <div class="product_thumb">
+                                    <a href="#">
+                                        <img src="http://wahid.rootnext.xyz/images/ecommerce/product_thumb_front.jpeg" alt="Product Thumbnail" class="img-fluid">
+                                    </a>
+                                    <span class="badge bg-dark">Sale</span>
+                                    <ul class="product_actions">
+                                        <li><a href="#" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#product-quick-view-modal" data-bs-toggle="modal" title="Quick View"><i class="far fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product_content">
+                                    <h6 class="product_title fw-bold"><a href="#" class="link-dark">Product title</a></h6>
+                                    <p class="product_price mb-1"><span class="text-decoration-line-through text-muted">$100</span> $75</p>
+                                    <div class="product_rating mb-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </div>
+                                    <a href="#" class="btn btn-dark btn-sm product_cart">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product_slide">
+                                <div class="product_thumb">
+                                    <a href="#">
+                                        <img src="http://wahid.rootnext.xyz/images/ecommerce/product_thumb_front.jpeg" alt="Product Thumbnail" class="img-fluid">
+                                    </a>
+                                    <span class="badge bg-dark">Sale</span>
+                                    <ul class="product_actions">
+                                        <li><a href="#" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#product-quick-view-modal" data-bs-toggle="modal" title="Quick View"><i class="far fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product_content">
+                                    <h6 class="product_title fw-bold"><a href="#" class="link-dark">Product title</a></h6>
+                                    <p class="product_price mb-1"><span class="text-decoration-line-through text-muted">$100</span> $75</p>
+                                    <div class="product_rating mb-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </div>
+                                    <a href="#" class="btn btn-dark btn-sm product_cart">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product_slide">
+                                <div class="product_thumb">
+                                    <a href="#">
+                                        <img src="http://wahid.rootnext.xyz/images/ecommerce/product_thumb_front.jpeg" alt="Product Thumbnail" class="img-fluid">
+                                    </a>
+                                    <span class="badge bg-dark">Sale</span>
+                                    <ul class="product_actions">
+                                        <li><a href="#" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#product-quick-view-modal" data-bs-toggle="modal" title="Quick View"><i class="far fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product_content">
+                                    <h6 class="product_title fw-bold"><a href="#" class="link-dark">Product title</a></h6>
+                                    <p class="product_price mb-1"><span class="text-decoration-line-through text-muted">$100</span> $75</p>
+                                    <div class="product_rating mb-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </div>
+                                    <a href="#" class="btn btn-dark btn-sm product_cart">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product_slide">
+                                <div class="product_thumb">
+                                    <a href="#">
+                                        <img src="http://wahid.rootnext.xyz/images/ecommerce/product_thumb_front.jpeg" alt="Product Thumbnail" class="img-fluid">
+                                    </a>
+                                    <span class="badge bg-dark">Sale</span>
+                                    <ul class="product_actions">
+                                        <li><a href="#" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#product-quick-view-modal" data-bs-toggle="modal" title="Quick View"><i class="far fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product_content">
+                                    <h6 class="product_title fw-bold"><a href="#" class="link-dark">Product title</a></h6>
+                                    <p class="product_price mb-1"><span class="text-decoration-line-through text-muted">$100</span> $75</p>
+                                    <div class="product_rating mb-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </div>
+                                    <a href="#" class="btn btn-dark btn-sm product_cart">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product_slide">
+                                <div class="product_thumb">
+                                    <a href="#">
+                                        <img src="http://wahid.rootnext.xyz/images/ecommerce/product_thumb_front.jpeg" alt="Product Thumbnail" class="img-fluid">
+                                    </a>
+                                    <span class="badge bg-dark">Sale</span>
+                                    <ul class="product_actions">
+                                        <li><a href="#" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#product-quick-view-modal" data-bs-toggle="modal" title="Quick View"><i class="far fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product_content">
+                                    <h6 class="product_title fw-bold"><a href="#" class="link-dark">Product title</a></h6>
+                                    <p class="product_price mb-1"><span class="text-decoration-line-through text-muted">$100</span> $75</p>
+                                    <div class="product_rating mb-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </div>
+                                    <a href="#" class="btn btn-dark btn-sm product_cart">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product_slide">
+                                <div class="product_thumb">
+                                    <a href="#">
+                                        <img src="http://wahid.rootnext.xyz/images/ecommerce/product_thumb_front.jpeg" alt="Product Thumbnail" class="img-fluid">
+                                    </a>
+                                    <span class="badge bg-dark">Sale</span>
+                                    <ul class="product_actions">
+                                        <li><a href="#" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#product-quick-view-modal" data-bs-toggle="modal" title="Quick View"><i class="far fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product_content">
+                                    <h6 class="product_title fw-bold"><a href="#" class="link-dark">Product title</a></h6>
+                                    <p class="product_price mb-1"><span class="text-decoration-line-through text-muted">$100</span> $75</p>
+                                    <div class="product_rating mb-2">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </div>
+                                    <a href="#" class="btn btn-dark btn-sm product_cart">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bg-white mt-4">
+                        <ul class="pagination m-0">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<%- include('../partials/modal_product'); %>
+<%- include('../partials/footer'); %>
