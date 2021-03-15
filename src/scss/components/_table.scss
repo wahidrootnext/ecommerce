@@ -1,0 +1,10 @@
+.table {
+	&-comparison {
+		td {
+			&:first-child {
+				font-weight: bold;
+			}
+			width: 250px;
+		}
+	}
+}

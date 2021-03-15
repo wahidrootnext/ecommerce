@@ -4,6 +4,9 @@ app.set("port", process.env.PORT || 3000)
 app.set('view engine', 'ejs');
 app.use(express.static('dist'))
 
+app.get('/comparison', function(req, res) {
+    res.render('pages/comparison')
+})
 app.get('/shop', function(req, res) {
     res.render('pages/shop')
 })
