@@ -9,126 +9,242 @@
         <link rel="stylesheet" href="/css/styles.bundle.css">
     </head>
     <body>
-        <nav class="shadow-sm navbar sticky-top navbar-expand-lg navbar-light bg-white">
-            <div class="container">
-                <a href="/" class="navbar-brand fw-bolder">eCommerce</a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" onclick="this.classList.toggle('opened')" >
-                    <svg width="24" height="24" viewBox="0 0 100 100"><path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" /><path class="line line2" d="M 20,50 H 80" /><path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" /></svg>
-                </button>
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/shop">Shop</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/checkout">Checkout</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">My Account</a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                    <h6 class="dropdown-header pt-3 pb-0">Welcome to eCommerce</h6>
+        <div class="header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <ul class="navigation m-0 p-0">
+                                <li class="dropdown">
+                                    <a href="#" class="btn ps-0 dropdown-toggle" data-bs-toggle="dropdown"><svg width="16" height="16" class="me-2" enable-background="new 0 0 512.001 512.001" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m503.17 423.72h-494.34c-4.875 0-8.828-3.953-8.828-8.828v-317.79c0-4.875 3.953-8.828 8.828-8.828h494.34c4.875 0 8.828 3.953 8.828 8.828v317.79c-1e-3 4.876-3.954 8.828-8.829 8.828z" fill="#F5F5F5"/>
+                                            <g fill="#FF4B55">
+                                                <path d="m512 114.08h-512v-16.977c0-4.875 3.953-8.828 8.828-8.828h494.34c4.875 0 8.828 3.953 8.828 8.828l-1e-3 16.977z"/>
+                                                <rect y="191.49" width="512" height="25.804"/>
+                                                <rect y="139.88" width="512" height="25.804"/>
+                                                <path d="m512 268.9h-503.17c-4.875 0-8.828-3.953-8.828-8.828v-16.977h512v25.805z"/>
+                                                <rect y="346.32" width="512" height="25.804"/>
+                                                <path d="m503.17 423.72h-494.34c-4.875 0-8.828-3.953-8.828-8.828v-16.976h512v16.977c0 4.875-3.953 8.827-8.828 8.827z"/>
+                                                <rect y="294.71" width="512" height="25.804"/>
+                                            </g>
+                                            <path d="m229.52 88.277h-220.69c-4.875 0-8.828 3.952-8.828 8.827v162.97c0 4.875 3.953 8.828 8.828 8.828h220.69c4.875 0 8.828-3.953 8.828-8.828v-162.97c-1e-3 -4.875-3.954-8.827-8.829-8.827z" fill="#41479B"/>
+                                            <g fill="#F5F5F5">
+                                                <path d="m24.789 108.54 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.591-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.76 1.324-0.76 1.578-1e-3z"/>
+                                                <path d="m24.789 139.19 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.591-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.759 1.324-0.759 1.578-1e-3z"/>
+                                                <path d="m24.789 169.85 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.591-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.759 1.324-0.759 1.578-1e-3z"/>
+                                                <path d="m24.789 200.5 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.591-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.76 1.324-0.76 1.578-1e-3z"/>
+                                                <path d="m24.789 231.16 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.591-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.761 1.324-0.761 1.578-1e-3z"/>
+                                                <path d="m48.582 123.57 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.758 1.325-0.758 1.578 0z"/>
+                                                <path d="m48.582 154.22 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.165-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.759 1.325-0.759 1.578 0z"/>
+                                                <path d="m48.582 184.88 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.759 1.325-0.759 1.578 0z"/>
+                                                <path d="m48.582 215.53 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.758 1.325-0.758 1.578 0z"/>
+                                                <path d="m72.375 108.54 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.759 1.325-0.759 1.578 0z"/>
+                                                <path d="m72.375 139.19 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.758 1.325-0.758 1.578 0z"/>
+                                                <path d="m72.375 169.85 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.758 1.325-0.758 1.578 0z"/>
+                                                <path d="m72.375 200.5 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.759 1.325-0.759 1.578 0z"/>
+                                                <path d="m72.375 231.16 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.76 1.325-0.76 1.578 0z"/>
+                                                <path d="m96.169 123.57 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.758 1.325-0.758 1.578 0z"/>
+                                                <path d="m96.169 154.22 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.165-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.759 1.325-0.759 1.578 0z"/>
+                                                <path d="m96.169 184.88 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.759 1.325-0.759 1.578 0z"/>
+                                                <path d="m96.169 215.53 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.758 1.325-0.758 1.578 0z"/>
+                                                <path d="m119.96 108.54 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.026-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.253-0.759 1.326-0.759 1.579 0z"/>
+                                                <path d="m119.96 139.19 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.026-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.253-0.758 1.326-0.758 1.579 0z"/>
+                                                <path d="m119.96 169.85 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.026-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.253-0.758 1.326-0.758 1.579 0z"/>
+                                                <path d="m119.96 200.5 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.026-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.253-0.759 1.326-0.759 1.579 0z"/>
+                                                <path d="m119.96 231.16 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.026-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.253-0.76 1.326-0.76 1.579 0z"/>
+                                                <path d="m143.76 123.57 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.253-0.758 1.325-0.758 1.578 0z"/>
+                                                <path d="m143.76 154.22 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.165-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.253-0.759 1.325-0.759 1.578 0z"/>
+                                                <path d="m143.76 184.88 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.253-0.759 1.325-0.759 1.578 0z"/>
+                                                <path d="m143.76 215.53 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.253-0.758 1.325-0.758 1.578 0z"/>
+                                                <path d="m167.55 108.54 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.759 1.325-0.759 1.578 0z"/>
+                                                <path d="m167.55 139.19 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.758 1.325-0.758 1.578 0z"/>
+                                                <path d="m167.55 169.85 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.758 1.325-0.758 1.578 0z"/>
+                                                <path d="m167.55 200.5 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.759 1.325-0.759 1.578 0z"/>
+                                                <path d="m167.55 231.16 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.251-0.76 1.325-0.76 1.578 0z"/>
+                                                <path d="m191.34 123.57 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.758 1.326-0.758 1.578 0z"/>
+                                                <path d="m191.34 154.22 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.165-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.759 1.326-0.759 1.578 0z"/>
+                                                <path d="m191.34 184.88 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.759 1.326-0.759 1.578 0z"/>
+                                                <path d="m191.34 215.53 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.758 1.326-0.758 1.578 0z"/>
+                                                <path d="m215.14 108.54 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.759 1.324-0.759 1.578 0z"/>
+                                                <path d="m215.14 139.19 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.758 1.324-0.758 1.578 0z"/>
+                                                <path d="m215.14 169.85 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.758 1.324-0.758 1.578 0z"/>
+                                                <path d="m215.14 200.5 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.759 1.324-0.759 1.578 0z"/>
+                                                <path d="m215.14 231.16 1.954 5.86 6.177 0.047c0.8 7e-3 1.131 1.027 0.488 1.502l-4.969 3.67 1.864 5.889c0.242 0.762-0.627 1.394-1.278 0.928l-5.025-3.592-5.025 3.592c-0.651 0.465-1.518-0.166-1.278-0.928l1.864-5.889-4.969-3.67c-0.643-0.476-0.312-1.495 0.488-1.502l6.177-0.047 1.954-5.86c0.252-0.76 1.324-0.76 1.578 0z"/>
+                                            </g>
+                                        </svg> English</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                        <li><a class="dropdown-item" href="#">Dutch</a></li>
+                                        <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                    </ul>
                                 </li>
-                                <li class="px-3 py-2">
-                                    <div class="row gx-1">
-                                        <div class="col">
-                                            <a href="#" class="btn btn-primary w-100">Join</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="#" class="btn btn-secondary w-100">Sign In</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><a class="dropdown-item" href="#">My Orders</a></li>
-                                <li><a class="dropdown-item" href="#">Message Center</a></li>
-                                <li><a class="dropdown-item" href="#">My Favourite Stores</a></li>
-                                <li><a class="dropdown-item" href="#">My Coupons</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#" title="Wishlist"><i class="far fa-heart"></i><span class="ms-2 d-lg-none">Wishlist</span></a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle no-icon" data-bs-toggle="dropdown" href="#" title="Search"><i class="fas fa-search"></i><span class="ms-2 d-lg-none">Search</span></a>
-                            <div class="dropdown-menu dropdown-menu-end" style="min-width: 16rem;">
-                                <form class="p-3">
-                                    <div class="input-group-over">
-                                        <input type="text" class="form-control" placeholder="Enter keywords..." style="padding-right: 40px;" required>
-                                        <button type="submit" class="btn"><i class="fas fa-search"></i></button>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle no-icon" data-bs-toggle="dropdown" data-bs-disable-inside="true" href="#" title="Cart"><i class="fas fa-shopping-basket"></i><span class="ms-2 d-lg-none">Cart</span></a>
-                            <div class="dropdown-menu dropdown-menu-end" style="min-width: 16rem;">
-                                <div class="p-3">
-                                    <div class="cart-list">
-                                        <div class="card border-start-0 border-end-0 border-top-0 pb-2 mb-2">
-                                            <div class="row g-0">
-                                                <div class="col-auto">
-                                                    <a href="#"><img src="http://placehold.it/50x50" alt="..."></a>
+                        </div>
+                        <div class="col text-end">
+                            <ul class="navigation m-0 p-0">
+                                <li class="dropdown">
+                                    <a href="#" class="btn pe-0 dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-user-circle me-2"></i> Welcome, Guest!</a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <h6 class="dropdown-header pt-3 pb-0">Welcome to eCommerce</h6>
+                                        </li>
+                                        <li class="px-3 py-2">
+                                            <div class="row gx-1">
+                                                <div class="col">
+                                                    <a href="#" class="btn btn-primary w-100">Join</a>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="card-body px-2 py-1">
-                                                        <h6 class="card-title mb-1"><a href="#" class="link-dark">Lorem ipsum dolor</a></h6>
-                                                        <p class="card-text"><small class="text-secondary fw-bold me-3">$250</small><small class="text-muted">Qty: <strong>2</strong></small></p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto align-self-center">
-                                                    <a href="#" class="text-danger card-remove"><i class="fas fa-times-circle"></i></a>
+                                                    <a href="#" class="btn btn-secondary w-100">Sign In</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="card border-start-0 border-end-0 border-top-0 pb-2 mb-2">
-                                            <div class="row g-0">
-                                                <div class="col-auto">
-                                                    <a href="#"><img src="http://placehold.it/50x50" alt="..."></a>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="card-body px-2 py-1">
-                                                        <h6 class="card-title mb-1"><a href="#" class="link-dark">Lorem ipsum dolor</a></h6>
-                                                        <p class="card-text"><small class="text-secondary fw-bold me-3">$250</small><small class="text-muted">Qty: <strong>2</strong></small></p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto align-self-center">
-                                                    <a href="#" class="text-danger card-remove"><i class="fas fa-times-circle"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card border-start-0 border-end-0 border-top-0 pb-2 mb-2">
-                                            <div class="row g-0">
-                                                <div class="col-auto">
-                                                    <a href="#"><img src="http://placehold.it/50x50" alt="..."></a>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="card-body px-2 py-1">
-                                                        <h6 class="card-title mb-1"><a href="#" class="link-dark">Lorem ipsum dolor</a></h6>
-                                                        <p class="card-text"><small class="text-secondary fw-bold me-3">$250</small><small class="text-muted">Qty: <strong>2</strong></small></p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto align-self-center">
-                                                    <a href="#" class="text-danger card-remove"><i class="fas fa-times-circle"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row fw-bold pt-1">
-                                        <div class="col">
-                                            <p class="m-0">Total:</p>
-                                        </div>
-                                        <div class="col">
-                                            <p class="m-0 text-end">$1500</p>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-divider"></div>
-                                    <div class="row g-2">
-                                        <div class="col">
-                                            <a href="/cart" class="btn btn-secondary w-100">View Cart</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="/checkout" class="btn btn-primary w-100">Checkout</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Orders</a></li>
+                                        <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                        <li><a class="dropdown-item" href="#">Compare</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+            <div class="header_middle">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="container">
+                        <a href="/" class="navbar-brand fw-bolder"><img src="http://placehold.it/100x40" alt="eCommerce"></a>
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" onclick="this.classList.toggle('opened')" >
+                            <svg width="24" height="24" viewBox="0 0 100 100"><path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" /><path class="line line2" d="M 20,50 H 80" /><path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" /></svg>
+                        </button>
+                        <div class="collapse navbar-collapse" id="menu">
+                            <form class="d-flex mb-2 mb-lg-0">
+                                <div class="input-group justify-content-center justify-content-lg-start">
+                                    <select class="form-select" style="max-width: 140px">
+                                        <option>All Categories</option>
+                                        <option value="1">Booking Products</option>
+                                        <option value="2">Cloths</option>
+                                    </select>
+                                    <div class="input-group-over">
+                                        <input type="text" class="form-control" placeholder="Search Products..." style="padding-right: 40px;" required>
+                                        <button type="button" class="btn"><i class="fas fa-camera"></i></button>
+                                    </div>
+                                    <button class="btn btn-dark" type="submit">Search</button>
+                                </div>
+                            </form>
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/shop">Shop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" title="Wishlist"><i class="far fa-heart"></i><span class="ms-2 d-lg-none">Wishlist</span></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" title="Compare"><i class="fas fa-exchange-alt"></i><span class="ms-2 d-lg-none">Compare</span></a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-disable-inside="true" href="#" title="Cart"><i class="fas fa-shopping-basket"></i><span class=" ms-2 d-lg-none">Cart</span></a>
+                                    <div class="dropdown-menu dropdown-menu-end" style="min-width: 16rem;">
+                                        <div class="p-3">
+                                            <div class="cart-list">
+                                                <div class="card border-start-0 border-end-0 border-top-0 pb-2 mb-2">
+                                                    <div class="row g-0">
+                                                        <div class="col-auto">
+                                                            <a href="#"><img src="http://placehold.it/50x50" alt="..."></a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="card-body px-2 py-1">
+                                                                <h6 class="card-title mb-1"><a href="#" class="link-dark">Lorem ipsum dolor</a></h6>
+                                                                <p class="card-text"><small class="text-secondary fw-bold me-3">$250</small><small class="text-muted">Qty: <strong>2</strong></small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto align-self-center">
+                                                            <a href="#" class="text-danger card-remove"><i class="fas fa-times-circle"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card border-start-0 border-end-0 border-top-0 pb-2 mb-2">
+                                                    <div class="row g-0">
+                                                        <div class="col-auto">
+                                                            <a href="#"><img src="http://placehold.it/50x50" alt="..."></a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="card-body px-2 py-1">
+                                                                <h6 class="card-title mb-1"><a href="#" class="link-dark">Lorem ipsum dolor</a></h6>
+                                                                <p class="card-text"><small class="text-secondary fw-bold me-3">$250</small><small class="text-muted">Qty: <strong>2</strong></small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto align-self-center">
+                                                            <a href="#" class="text-danger card-remove"><i class="fas fa-times-circle"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card border-start-0 border-end-0 border-top-0 pb-2 mb-2">
+                                                    <div class="row g-0">
+                                                        <div class="col-auto">
+                                                            <a href="#"><img src="http://placehold.it/50x50" alt="..."></a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="card-body px-2 py-1">
+                                                                <h6 class="card-title mb-1"><a href="#" class="link-dark">Lorem ipsum dolor</a></h6>
+                                                                <p class="card-text"><small class="text-secondary fw-bold me-3">$250</small><small class="text-muted">Qty: <strong>2</strong></small></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto align-self-center">
+                                                            <a href="#" class="text-danger card-remove"><i class="fas fa-times-circle"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row fw-bold pt-1">
+                                                <div class="col">
+                                                    <p class="m-0">Total:</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="m-0 text-end">$1500</p>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="row g-2">
+                                                <div class="col">
+                                                    <a href="/cart" class="btn btn-secondary w-100">View Cart</a>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="/checkout" class="btn btn-primary w-100">Checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="header_bottom bg-light">
+                <div class="container">
+                    <div class="dropdown">
+                        <a href="#" class="btn ps-0 dropdown-toggle py-3 fw-bold text-dark" data-bs-toggle="dropdown"><i class="fas fa-list me-2"></i> Shop By Category</a>
+                        <ul class="dropdown-menu" style="min-width: 15rem">
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                            <li><a class="dropdown-item" href="#">Category</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+

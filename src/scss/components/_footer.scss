@@ -1,3 +1,5 @@
+$footer-color: rgba($dark, .6);
+
 .footer {
 	&_top {
 		.footer_widget {
@@ -5,6 +7,7 @@
 				color: $dark;
 			}
 			&__content {
+				color: $footer-color;
 				.navigation {
 					list-style: none;
 					li {
@@ -13,10 +16,15 @@
 						}
 					}
 					a {
-						color: rgba($dark, .6);
+						color: $footer-color;
 						display: inline-block;
 						&:hover {
 							color: $dark;
+						}
+					}
+					&_social_media {
+						i {
+							width: 1.5rem;
 						}
 					}
 				}
@@ -25,7 +33,7 @@
 	}
 	&_bottom {
 		.copyright {
-			color: rgba($dark, .6);
+			color: $footer-color;
 		}
 	}
 }
